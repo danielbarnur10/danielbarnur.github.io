@@ -143,15 +143,17 @@
 						<a href = "./cv/danielBarnurResume2024.pdf" title="Resume" download>My CV.</a>
 						<!-- Email Form -->
 						<section id="contact">
-						  <h2>Contact Me</h2>
 						  <p>If you'd like to get in touch, feel free to send me a message below.</p>
 						  
-						  <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-						    <label for="name">Name:</label>
-						    <input type="text" id="name" name="name" required>
+						 <form
+						  action="https://formspree.io/f/mpwzrpdb"
+						  method="POST"
+						>
+						  <label for="name">Name:</label>
+						    <input type="text" id="name" name="name" required autocomplete="name">
 						
 						    <label for="email">Email:</label>
-						    <input type="email" id="email" name="email" required>
+						    <input type="email" id="email" name="_replyto" required autocomplete="email">
 						
 						    <label for="subject">Subject:</label>
 						    <input type="text" id="subject" name="subject" required>
@@ -159,7 +161,7 @@
 						    <label for="message">Message:</label>
 						    <textarea id="message" name="message" rows="4" required></textarea>
 						
-						    <button type="submit">Send Email</button>
+						    <button type="submit">Send Message</button>
 						  </form>
 						</section>
 					</header>
