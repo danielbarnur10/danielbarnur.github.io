@@ -1543,17 +1543,18 @@ body.is-touch .poptrox-popup .closer {
 }
 
 /* Gallery */
-
-.gallery .image.fit{
-	    height: 255px;
-    overflow: hidden;
-}
-.gallery .image.fit img {
-    height: 100%;
+.gallery .image.fit {
+    aspect-ratio: 16 / 9;   /* Or 4 / 3, 1 / 1, etc. */
     width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.gallery .image.fit img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
-    margin: 0 auto;
 }
 
 .gallery {
